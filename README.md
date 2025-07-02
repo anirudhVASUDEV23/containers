@@ -250,6 +250,7 @@ This message shows that your installation appears to be working correctly.
 
 ### Clone this repository and move to example folder
 
+git clone https://github.com/anirudhVASUDEV23/containers.git
 ```
 
 cd  examples
@@ -268,4 +269,49 @@ Password:
 
 Login Succeeded
 ```
+
+
+### Build your first Docker Image
+You need to change the username accoringly in the below command
+
+
+docker build -t username/my-first-docker-image:latest .
+
+
+### Verify Docker Image is created
+docker images
+
+### Output
+
+
+REPOSITORY                            TAG                     IMAGE ID       CREATED          SIZE
+anirudh231812/my-first-docker-image   latest                  d8a143945795   35 minutes ago   548MB
+ubuntu                                latest                  bf16bdcff9c9   4 weeks ago      78.1MB
+hello-world                           latest                  74cc54e27dc4   5 months ago     10.1kB
+node                                  16-alpine               2573171e0124   23 months ago    118MB
+maven                                 3.8.1-adoptopenjdk-11   6401e1c0bccb   3 years ago      536MB
+
+
+### Run your First Docker Container
+docker run -it abhishekf5/my-first-docker-image
+
+### Output
+Hello World
+
+### Push the Image to DockerHub and share it with the world
+docker push abhishekf5/my-first-docker-image
+
+### Output
+The push refers to repository [docker.io/anirudh231812/my-first-docker-image]
+
+33251b2316e3: Pushed
+0eb5891ed14b: Pushed
+afad70fc0371: Pushed
+a8346d259389: Pushed
+latest: digest: sha256:07441697d778175a0f3d88c288b8c28e3d443884d649cfec5bb06f2cf6efe450 size: 1155
+
+
+
+
+
 
