@@ -298,7 +298,7 @@ maven                                 3.8.1-adoptopenjdk-11   6401e1c0bccb   3 y
 
 ### Run your First Docker Container
 ```
-docker run -it abhishekf5/my-first-docker-image
+docker run -it username/my-first-docker-image
 ```
 
 ### Output
